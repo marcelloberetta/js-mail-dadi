@@ -4,12 +4,35 @@ var userName = prompt("Ciao ! come ti chiami ?");
 
 alert("Benvenuto " + userName);
 
-alert("Giochiamo a dadi. Premi OK per effettuare il tuo lancio")
+alert("Giochiamo a dadi. Premi OK per effettuare il tuo lancio");
+
+var dadoUtente = Math.floor(Math.random() * 6 ) + 1 ;
+
+document.getElementById("lancioUtente").innerHTML = "Lancio utente =  " + dadoUtente;
+
+
+var dadoCpu = Math.floor(Math.random() * 6 ) + 1 ;
+
+document.getElementById("lancioCpu").innerHTML = "Lancio CPU = " + dadoCpu;
+
+
+if (dadoCpu > dadoUtente){
+   document.getElementById("risultato").innerHTML = "<strong> Hai perso </strong>"
+}
+
+else if (dadoCpu === dadoUtente){
+   document.getElementById("risultato").innerHTML = "<strong> Hai pareggiato </strong>"
+}
+
+else{
+   document.getElementById("risultato").innerHTML = " <strong> Hai perso </strong>"
+}
 
 
 
-//CREIAMO UN ARRAY CONTENENTE LE FACCE DEL DADO
-var dadoFacce = [1,2,3,4,5,6];
+
+
+
 
 
 
