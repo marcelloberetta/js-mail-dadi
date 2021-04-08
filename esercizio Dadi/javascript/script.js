@@ -4,9 +4,14 @@ var userName = prompt("Ciao ! come ti chiami ?");
 
 alert("Benvenuto " + userName);
 
-// * INFORMIAMO L'UTENTE SUL GIOCO E CHIEDIAMO IL NUMERO
-var userNumber = prompt("Giochiamo a dadi. Scegli un numero da 1 a 12");
+alert("Giochiamo a dadi. Premi OK per effettuare il tuo lancio")
 
-// console.log(userNumber);
+
+
+//CREIAMO UN ARRAY CONTENENTE LE FACCE DEL DADO
+var dadoFacce = [1,2,3,4,5,6];
+
+
+
 
 
