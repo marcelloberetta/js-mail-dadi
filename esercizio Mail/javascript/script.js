@@ -14,7 +14,7 @@ for(var i = 0; i < mailList.length; i++){
     }
 }
 if(foundMail){
-   document.getElementById("result").innerHTML = "Accesso Eseguito. <br> Attendi il caricamento della pagina";
+   document.getElementById("result").innerHTML = "Accesso Eseguito " + "<strong>" + userRequest + "</strong>" + "." + "<br> Attendi il caricamento della pagina";
 }else{
-    document.getElementById("result").innerHTML = "Mail inserita non corretta. Si prega di riprovare";
+    document.getElementById("result").innerHTML = "<strong>" + userRequest + "</strong>" + " non è una mail valida. Si prega di riprovare";
 }
