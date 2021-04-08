@@ -25,7 +25,7 @@ else if (dadoCpu === dadoUtente){
 }
 
 else{
-   document.getElementById("risultato").innerHTML = " <strong> Hai perso </strong>"
+   document.getElementById("risultato").innerHTML = " <strong> Hai vinto </strong>"
 }
 
 
